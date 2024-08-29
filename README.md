@@ -1,1 +1,14 @@
-The "database" file is designed to make running CodeQL and updating this repository faster from the zthompson account. It first creates a database called "c_test_db" and then scans C code in the codeql-test directory, and puts the SARIF files in the __codescan directory. The chosen name of the output SARIF file is given as an input argument. The user is then given a choice to update this Github repository, and choose the commit message. The file structure and the Github access token are hardcoded into the program to make running it faster, and it is assumed that the "database" file itself is saved in the home directory.
+# CodeQL Tests
+
+For GitHub to accept uploads of CodeQL scan results, we have to enable "Avanced
+CodeQL Analysis" for the repository. 
+
+- Problem. Unfortunatley, we can only do so for those with Enterprise subscripts or for
+public repositories.
+- Nice Feature. Once the Avanced CodeQL Analysis is enabled, the entire
+	pipeline of code scanning and uploading results can be automated by
+	GitHub workflow.
+
+
+
+
